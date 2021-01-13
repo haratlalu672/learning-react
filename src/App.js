@@ -4,9 +4,7 @@ import CounterExample from "./Components/CounterExample";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./Views/Home";
-import About from "./Views/About";
-import Product from './Views/Product';
+import Routing from "./Components/Routing";
 
 function App() {
   return (
@@ -14,7 +12,8 @@ function App() {
       <Router>
         <Header />
         <div className="p-3">
-          <Switch>
+          <Routing />
+          {/* <Switch>
             <Route exact path="/">
               <Home />
             </Route>
@@ -24,7 +23,7 @@ function App() {
             <Route path="/products/:id">
               <Product />
             </Route>
-          </Switch>
+          </Switch> */}
         </div>
       </Router>
       <Footer />
